@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class PaperThrow : MonoBehaviour
 {
-    public float throwStrength = 10.0f;
+    [SerializeField] float throwStrength = 10.0f;
+   
+   
+
 
     private void Update()
     {
+
+        
+        if (GameManager.instance.canThrow)
+        {       
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -17,6 +24,9 @@ public class PaperThrow : MonoBehaviour
                 Vector3 direction = (hit.point - transform.position).normalized;
                 GetComponent<Rigidbody>().AddForce(direction * throwStrength, ForceMode.Impulse);
             }
+                GameManager.instance.canThrow = false;
+                Destroy(GetComponent<PaperThrow>());
+        }
         }
     }
 }
