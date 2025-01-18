@@ -1,0 +1,66 @@
+[+] Containers:
+ |- [+] Container: /Game/Procedural_Dungeon/Level/ProceduralDungeon
+ |   |- [+] ActorDescs:
+ |   |   |- Guid:00817E8044EB7ED51B866DBAA4FF25C4 BaseClass: NativeClass:/Script/Engine.PlayerStart Name:PlayerStart_0 Label:PlayerStart SpatiallyLoaded:0 Bounds:IsValid=true, Min=(X=350.000 Y=-40.000 Z=88.000), Max=(X=430.000 Y=40.000 Z=272.000) RuntimeGrid:None EditorOnly:0 RuntimeOnly:0 HLODRelevant:0 ListedInSceneOutliner:1 IsMainWorldOnly:0
+ |   |   |- Guid:012486E441F360DE9D68F3AAC83BAF31 BaseClass:/Game/Procedural_Dungeon/Dungeon_Generator.Dungeon_Generator_C NativeClass:/Script/Engine.Actor Name:Dungeon_Generator_C_UAID_6C02E0419E0CFD3502_1898286992 Label:Dungeon_Generator SpatiallyLoaded:1 Bounds:IsValid=true, Min=(X=0.000 Y=0.000 Z=0.000), Max=(X=0.000 Y=0.000 Z=0.000) RuntimeGrid:None EditorOnly:0 RuntimeOnly:0 HLODRelevant:0 ListedInSceneOutliner:1 IsMainWorldOnly:0
+ |   |   |- Guid:10CB95024BD8A3BC48BD0AB275F5657B BaseClass:/Game/FirstPerson/Blueprints/BP_Pickup_Rifle.BP_Pickup_Rifle_C NativeClass:/Script/Engine.Actor Name:BP_Rifle_C_1 Label:BP_Pickup_Rifle SpatiallyLoaded:1 Bounds:IsValid=true, Min=(X=1378.000 Y=818.000 Z=64.000), Max=(X=1442.000 Y=907.440 Z=128.000) RuntimeGrid:None EditorOnly:0 RuntimeOnly:0 HLODRelevant:0 ListedInSceneOutliner:1 IsMainWorldOnly:0
+ |   |   |- Guid:5E84ECDD4B2ABCD68BFEE285C8F7B0C7 BaseClass: NativeClass:/Script/NavigationSystem.NavMeshBoundsVolume Name:NavMeshBoundsVolume_UAID_6C02E0419E0C353702_1587967903 Label:NavMeshBoundsVolume SpatiallyLoaded:0 Bounds:IsValid=true, Min=(X=-25000.000 Y=-25000.000 Z=-10000.000), Max=(X=25000.000 Y=25000.000 Z=10000.000) RuntimeGrid:None EditorOnly:0 RuntimeOnly:0 HLODRelevant:0 ListedInSceneOutliner:1 IsMainWorldOnly:0
+ |   |   |- Guid:8BD605764DC10D90B09EB5B365EE860A BaseClass: NativeClass:/Script/Engine.StaticMeshActor Name:StaticMeshActor_UAID_A4AE111137DC5EFB00_2001720423 Label:SM_SkySphere SpatiallyLoaded:0 Bounds:IsValid=true, Min=(X=-1638400.000 Y=-1638400.000 Z=-1638400.000), Max=(X=1638400.000 Y=1638400.000 Z=1638400.000) RuntimeGrid:None EditorOnly:0 RuntimeOnly:0 HLODRelevant:0 ListedInSceneOutliner:1 IsMainWorldOnly:0 FolderPath:Lighting FolderGuid:0BA5F0A04EADB18E70D5B180D08FA34B
+ |   |   |- Guid:B13123424C680038E0A2ECB868A3A65A BaseClass: NativeClass:/Script/Engine.DirectionalLight Name:DirectionalLight_1 Label:DirectionalLight SpatiallyLoaded:0 Bounds:Invalid RuntimeGrid:None EditorOnly:0 RuntimeOnly:0 HLODRelevant:0 ListedInSceneOutliner:1 IsMainWorldOnly:0 FolderPath:Lighting FolderGuid:0BA5F0A04EADB18E70D5B180D08FA34B
+ |   |   |- Guid:BF178D694E9433DDD6B6E89706EDB7CE BaseClass: NativeClass:/Script/Engine.SkyAtmosphere Name:SkyAtmosphere_0 Label:SkyAtmosphere SpatiallyLoaded:0 Bounds:IsValid=true, Min=(X=0.000 Y=0.000 Z=1020.000), Max=(X=0.000 Y=0.000 Z=1020.000) RuntimeGrid:None EditorOnly:0 RuntimeOnly:0 HLODRelevant:0 ListedInSceneOutliner:1 IsMainWorldOnly:0 FolderPath:Lighting FolderGuid:0BA5F0A04EADB18E70D5B180D08FA34B
+ |   |   |- Guid:EBE90F9240AA6DB692CA9CA4A1B8BEAC BaseClass: NativeClass:/Script/NavigationSystem.RecastNavMesh Name:RecastNavMesh_UAID_6C02E0419E0C353702-Default Label:RecastNavMesh-Default SpatiallyLoaded:0 Bounds:IsValid=true, Min=(X=0.000 Y=0.000 Z=0.000), Max=(X=0.000 Y=0.000 Z=0.000) RuntimeGrid:None EditorOnly:0 RuntimeOnly:0 HLODRelevant:0 ListedInSceneOutliner:1 IsMainWorldOnly:0
+ |   |   |- Guid:EE2A04564ACDE245B43E5E8A16EDD48D BaseClass: NativeClass:/Script/Engine.WorldDataLayers Name:WorldDataLayers Label:WorldDataLayers SpatiallyLoaded:0 Bounds:Invalid RuntimeGrid:None EditorOnly:0 RuntimeOnly:0 HLODRelevant:0 ListedInSceneOutliner:1 IsMainWorldOnly:1
+ |   |- [+] Clusters:
+ |   |   |- [+] [  0]
+ |   |   |   |- Guid:00817E8044EB7ED51B866DBAA4FF25C4 BaseClass: NativeClass:/Script/Engine.PlayerStart Name:PlayerStart_0 Label:PlayerStart SpatiallyLoaded:0 Bounds:IsValid=true, Min=(X=350.000 Y=-40.000 Z=88.000), Max=(X=430.000 Y=40.000 Z=272.000) RuntimeGrid:None EditorOnly:0 RuntimeOnly:0 HLODRelevant:0 ListedInSceneOutliner:1 IsMainWorldOnly:0
+ |   |   |- [+] [  1]
+ |   |   |   |- Guid:012486E441F360DE9D68F3AAC83BAF31 BaseClass:/Game/Procedural_Dungeon/Dungeon_Generator.Dungeon_Generator_C NativeClass:/Script/Engine.Actor Name:Dungeon_Generator_C_UAID_6C02E0419E0CFD3502_1898286992 Label:Dungeon_Generator SpatiallyLoaded:1 Bounds:IsValid=true, Min=(X=0.000 Y=0.000 Z=0.000), Max=(X=0.000 Y=0.000 Z=0.000) RuntimeGrid:None EditorOnly:0 RuntimeOnly:0 HLODRelevant:0 ListedInSceneOutliner:1 IsMainWorldOnly:0
+ |   |   |- [+] [  2]
+ |   |   |   |- Guid:10CB95024BD8A3BC48BD0AB275F5657B BaseClass:/Game/FirstPerson/Blueprints/BP_Pickup_Rifle.BP_Pickup_Rifle_C NativeClass:/Script/Engine.Actor Name:BP_Rifle_C_1 Label:BP_Pickup_Rifle SpatiallyLoaded:1 Bounds:IsValid=true, Min=(X=1378.000 Y=818.000 Z=64.000), Max=(X=1442.000 Y=907.440 Z=128.000) RuntimeGrid:None EditorOnly:0 RuntimeOnly:0 HLODRelevant:0 ListedInSceneOutliner:1 IsMainWorldOnly:0
+ |   |   |- [+] [  3]
+ |   |   |   |- Guid:5E84ECDD4B2ABCD68BFEE285C8F7B0C7 BaseClass: NativeClass:/Script/NavigationSystem.NavMeshBoundsVolume Name:NavMeshBoundsVolume_UAID_6C02E0419E0C353702_1587967903 Label:NavMeshBoundsVolume SpatiallyLoaded:0 Bounds:IsValid=true, Min=(X=-25000.000 Y=-25000.000 Z=-10000.000), Max=(X=25000.000 Y=25000.000 Z=10000.000) RuntimeGrid:None EditorOnly:0 RuntimeOnly:0 HLODRelevant:0 ListedInSceneOutliner:1 IsMainWorldOnly:0
+ |   |   |- [+] [  4]
+ |   |   |   |- Guid:8BD605764DC10D90B09EB5B365EE860A BaseClass: NativeClass:/Script/Engine.StaticMeshActor Name:StaticMeshActor_UAID_A4AE111137DC5EFB00_2001720423 Label:SM_SkySphere SpatiallyLoaded:0 Bounds:IsValid=true, Min=(X=-1638400.000 Y=-1638400.000 Z=-1638400.000), Max=(X=1638400.000 Y=1638400.000 Z=1638400.000) RuntimeGrid:None EditorOnly:0 RuntimeOnly:0 HLODRelevant:0 ListedInSceneOutliner:1 IsMainWorldOnly:0 FolderPath:Lighting FolderGuid:0BA5F0A04EADB18E70D5B180D08FA34B
+ |   |   |- [+] [  5]
+ |   |   |   |- Guid:B13123424C680038E0A2ECB868A3A65A BaseClass: NativeClass:/Script/Engine.DirectionalLight Name:DirectionalLight_1 Label:DirectionalLight SpatiallyLoaded:0 Bounds:Invalid RuntimeGrid:None EditorOnly:0 RuntimeOnly:0 HLODRelevant:0 ListedInSceneOutliner:1 IsMainWorldOnly:0 FolderPath:Lighting FolderGuid:0BA5F0A04EADB18E70D5B180D08FA34B
+ |   |   |- [+] [  6]
+ |   |   |   |- Guid:BF178D694E9433DDD6B6E89706EDB7CE BaseClass: NativeClass:/Script/Engine.SkyAtmosphere Name:SkyAtmosphere_0 Label:SkyAtmosphere SpatiallyLoaded:0 Bounds:IsValid=true, Min=(X=0.000 Y=0.000 Z=1020.000), Max=(X=0.000 Y=0.000 Z=1020.000) RuntimeGrid:None EditorOnly:0 RuntimeOnly:0 HLODRelevant:0 ListedInSceneOutliner:1 IsMainWorldOnly:0 FolderPath:Lighting FolderGuid:0BA5F0A04EADB18E70D5B180D08FA34B
+ |   |   |- [+] [  7]
+ |   |   |   |- Guid:EBE90F9240AA6DB692CA9CA4A1B8BEAC BaseClass: NativeClass:/Script/NavigationSystem.RecastNavMesh Name:RecastNavMesh_UAID_6C02E0419E0C353702-Default Label:RecastNavMesh-Default SpatiallyLoaded:0 Bounds:IsValid=true, Min=(X=0.000 Y=0.000 Z=0.000), Max=(X=0.000 Y=0.000 Z=0.000) RuntimeGrid:None EditorOnly:0 RuntimeOnly:0 HLODRelevant:0 ListedInSceneOutliner:1 IsMainWorldOnly:0
+ |   |   |- [+] [  8]
+ |   |   |   |- Guid:EE2A04564ACDE245B43E5E8A16EDD48D BaseClass: NativeClass:/Script/Engine.WorldDataLayers Name:WorldDataLayers Label:WorldDataLayers SpatiallyLoaded:0 Bounds:Invalid RuntimeGrid:None EditorOnly:0 RuntimeOnly:0 HLODRelevant:0 ListedInSceneOutliner:1 IsMainWorldOnly:1
+ |- ContainerInstances:
+ |- [+] MainContainer:
+ |   |-        ID: 00000000000000000000000000000000
+ |   |-  ParentID: 00000000000000000000000000000000
+ |   |-    Bounds: IsValid=false, Min=(X=0.000 Y=0.000 Z=0.000), Max=(X=0.000 Y=0.000 Z=0.000)
+ |   |- Transform: 0.000000,0.000000,0.000000|0.000000,0.000000,-0.000000|1.000000,1.000000,1.000000
+ |   |- Container: /Game/Procedural_Dungeon/Level/ProceduralDungeon
+----------------------------------------------------------------------------------------------------------------
+ProceduralDungeon - Persistent Level
+----------------------------------------------------------------------------------------------------------------
+[+] Content of ProceduralDungeon Persistent Level
+ |- Always loaded Actor Count: 9 
+ |- Actor Path: /Game/Procedural_Dungeon/Level/ProceduralDungeon.ProceduralDungeon:PersistentLevel.BP_Rifle_C_1
+ |- Actor Package: /Game/__ExternalActors__/Procedural_Dungeon/Level/ProceduralDungeon/B/T5/D7WXVJXBFVQ1CBLUH337XP
+ |- Actor Path: /Game/Procedural_Dungeon/Level/ProceduralDungeon.ProceduralDungeon:PersistentLevel.DirectionalLight_1
+ |- Actor Package: /Game/__ExternalActors__/Procedural_Dungeon/Level/ProceduralDungeon/A/K3/KBLSHD9RSIJZL8552J64JV
+ |- Actor Path: /Game/Procedural_Dungeon/Level/ProceduralDungeon.ProceduralDungeon:PersistentLevel.Dungeon_Generator_C_UAID_6C02E0419E0CFD3502_1898286992
+ |- Actor Package: /Game/__ExternalActors__/Procedural_Dungeon/Level/ProceduralDungeon/A/OG/HSQTHEQAO3BX0YKT4PSWAA
+ |- Actor Path: /Game/Procedural_Dungeon/Level/ProceduralDungeon.ProceduralDungeon:PersistentLevel.NavMeshBoundsVolume_UAID_6C02E0419E0C353702_1587967903
+ |- Actor Package: /Game/__ExternalActors__/Procedural_Dungeon/Level/ProceduralDungeon/9/TP/Q2ZVE94SWSQ7UB6YFUZVQ4
+ |- Actor Path: /Game/Procedural_Dungeon/Level/ProceduralDungeon.ProceduralDungeon:PersistentLevel.PlayerStart_0
+ |- Actor Package: /Game/__ExternalActors__/Procedural_Dungeon/Level/ProceduralDungeon/5/9W/Z6CGEUDRUU2WXGT7475D5G
+ |- Actor Path: /Game/Procedural_Dungeon/Level/ProceduralDungeon.ProceduralDungeon:PersistentLevel.RecastNavMesh_UAID_6C02E0419E0C353702-Default
+ |- Actor Package: /Game/__ExternalActors__/Procedural_Dungeon/Level/ProceduralDungeon/3/1E/J2M77QDCATMOB026UTCWP0
+ |- Actor Path: /Game/Procedural_Dungeon/Level/ProceduralDungeon.ProceduralDungeon:PersistentLevel.SkyAtmosphere_0
+ |- Actor Package: /Game/__ExternalActors__/Procedural_Dungeon/Level/ProceduralDungeon/4/HI/DSLNQFN5XPR24JB6JL8Y3X
+ |- Actor Path: /Game/Procedural_Dungeon/Level/ProceduralDungeon.ProceduralDungeon:PersistentLevel.StaticMeshActor_UAID_A4AE111137DC5EFB00_2001720423
+ |- Actor Package: /Game/__ExternalActors__/Procedural_Dungeon/Level/ProceduralDungeon/2/B7/RCTBQHZC65J7LQ8Q4N2DF5
+ |- Actor Path: /Game/Procedural_Dungeon/Level/ProceduralDungeon.ProceduralDungeon:PersistentLevel.WorldDataLayers
+ |- Actor Package: /Game/__ExternalActors__/Procedural_Dungeon/Level/ProceduralDungeon/E/RP/UXMHH4F9MP0ZA991VRR4ML
+
+----------------------------------------------------------------------------------------------------------------
+ProceduralDungeon - Runtime Hash Set
+----------------------------------------------------------------------------------------------------------------
+
