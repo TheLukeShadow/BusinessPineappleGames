@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
             instance = this;
         }
         Instantiate(throwableObjects[Random.Range(0, throwableObjects.Count)], this.transform);
+        Debug.Log("Hello");
     }
 
     // Update is called once per frame
