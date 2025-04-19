@@ -784,6 +784,7 @@ GameObject:
   - component: {fileID: 1162999845}
   - component: {fileID: 1162999846}
   - component: {fileID: 1162999847}
+  - component: {fileID: 1162999848}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -837,17 +838,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e01411eaeb0366646a005ededbd09c2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 5
-  Orientation: {fileID: 1420174004}
-  GroundDrag: 5
-  JumpForce: 8
-  JumpCooldown: 0.3
-  AirMultiplier: 0.5
-  PlayerHeight: 2
+  orientation: {fileID: 1420174004}
+  groundDrag: 5
+  jumpForce: 6
+  jumpCooldown: 0.2
+  airMultiplier: 0.5
+  regMoveSpeed: 8
+  slowMoveSpeed: 4
+  slideSpeed: 30
+  speedIncreaseMultiplier: 1.5
+  slopeIncreaseMultiplier: 1.5
+  playerHeight: 2
   isGround:
     serializedVersion: 2
     m_Bits: 8
-  JumpKeyc: 32
+  jumpKey: 32
+  slowKey: 121
+  maxSlopeAngle: 60
+  State: 0
+  IsSliding: 0
+--- !u!114 &1162999848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162999844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89dd6c08368c958469661a9980d52499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orientation: {fileID: 1420174004}
+  playerObj: {fileID: 1488500271}
+  maxSlideTime: 0.75
+  slideForce: 200
+  slideYScale: 0.5
+  slideKey: 306
 --- !u!1 &1420174003
 GameObject:
   m_ObjectHideFlags: 0
