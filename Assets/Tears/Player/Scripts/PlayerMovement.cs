@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float airMultiplier;
     [SerializeField] float regMoveSpeed;
     [SerializeField] float slowMoveSpeed;
+    [SerializeField] float dashSpeed;
+    public float MaxYSpeed;
     bool readyToJump = true;
     float horizontalInput;
     float verticalInput;
@@ -41,14 +43,16 @@ public class PlayerMovement : MonoBehaviour
     bool exitingSlope;
 
     public MovementState State;
-   public bool IsSliding;
+    public bool IsSliding;
+    public bool dashing;
 
     public enum MovementState
     {
         walking,
         slowwalking,
         air,
-        sliding
+        sliding,
+        dashing
     }
 
     // Start is called before the first frame update
@@ -64,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
         PlayerInput();
         StateHandler();
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, isGround);
-        if (grounded) rb.drag = groundDrag; else rb.drag = 0;
+        if (grounded && State != MovementState.dashing) rb.drag = groundDrag; else rb.drag = 0;
         SpeedControl();
         
     }
@@ -90,8 +94,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void StateHandler()
     {
+        if (dashing)
+        {
+            State = MovementState.dashing;
+            moveSpeed = dashSpeed;
+        }
         //SlowWalk
-        if(grounded && Input.GetKey(slowKey))
+       else if (grounded && Input.GetKey(slowKey))
         {
             State = MovementState.slowwalking;
             desiredMoveSPeed = slowMoveSpeed;
@@ -139,6 +148,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void MovePlayer()
     {
+        if (State == MovementState.dashing) return;
         //on slope
         if (OnSLope() && !exitingSlope)
         {
@@ -174,6 +184,7 @@ public class PlayerMovement : MonoBehaviour
             }
 
         }
+        if(MaxYSpeed != 0 && rb.velocity.y > MaxYSpeed) rb.velocity = new Vector3(rb.velocity.x, MaxYSpeed, rb.velocity.z);
 
     }
 

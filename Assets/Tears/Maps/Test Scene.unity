@@ -785,6 +785,8 @@ GameObject:
   - component: {fileID: 1162999846}
   - component: {fileID: 1162999847}
   - component: {fileID: 1162999848}
+  - component: {fileID: 1162999849}
+  - component: {fileID: 1162999850}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -845,6 +847,8 @@ MonoBehaviour:
   airMultiplier: 0.5
   regMoveSpeed: 8
   slowMoveSpeed: 4
+  dashSpeed: 0
+  MaxYSpeed: 0
   slideSpeed: 30
   speedIncreaseMultiplier: 1.5
   slopeIncreaseMultiplier: 1.5
@@ -857,6 +861,7 @@ MonoBehaviour:
   maxSlopeAngle: 60
   State: 0
   IsSliding: 0
+  dashing: 0
 --- !u!114 &1162999848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -875,6 +880,46 @@ MonoBehaviour:
   slideForce: 200
   slideYScale: 0.5
   slideKey: 306
+--- !u!114 &1162999849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162999844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22a1010bf8ae56d4f8d1429336d0d2ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orientation: {fileID: 1420174004}
+  playerCam: {fileID: 665835118}
+  dashForce: 250
+  dashUpwardForce: 0.5
+  dashDuration: 0.3
+  maxDashYSpeed: 2
+  dashCooldown: 1.5
+  dashCooldownTimer: 0
+  dashKey: 304
+  useCameraForward: 1
+  allowAllDirections: 1
+  disableGravaity: 1
+  resetVel: 1
+--- !u!114 &1162999850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162999844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df17ba4ae6d8494daec01ce0e1694de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 665835120}
+  vaultHeight: 1.6
+  JumpKey: 32
 --- !u!1 &1420174003
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,7 +977,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488500270}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
